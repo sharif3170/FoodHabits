@@ -35,7 +35,7 @@ const defaultData: FoodHabitData = {
     sunday: []
   }
 };
-
+console.log("API URL from Vercel:", import.meta.env.VITE_API_URL);
 function App() {
   const [user, setUser] = useState<User | null>(() => {
     const savedUser = localStorage.getItem('foodHabitsUser');
